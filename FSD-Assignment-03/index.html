@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h2>Student Registration</h2>
+
+    <form id="regForm">
+
+        <div class="group">
+            <input type="text" id="username" placeholder="Username">
+            <small id="uErr"></small>
+        </div>
+
+        <div class="group">
+            <input type="text" id="email" placeholder="Email">
+            <small id="eErr"></small>
+        </div>
+
+        <div class="group">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <small id="pErr"></small>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="group password-wrap">
+            <input type="password" id="password" placeholder="Password">
+            <span id="togglePass" class="eye">👁</span>
+            <small id="passErr"></small>
+        </div>
+
+        <!-- CHECKLIST -->
+        <ul class="checklist">
+            <li id="len">7+ characters</li>
+            <li id="cap">1 uppercase letter</li>
+            <li id="num">1 number</li>
+            <li id="spec">1 special (!@#$%^&*)</li>
+        </ul>
+
+        <!-- CONFIRM -->
+        <div class="group password-wrap">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <span id="toggleConfirm" class="eye">👁</span>
+            <small id="cErr"></small>
+        </div>
+
+        <button type="submit">Create Account</button>
+
+        <p id="success"></p>
+
+    </form>
+
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>
